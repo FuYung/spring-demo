@@ -36,6 +36,12 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
+        <!-- H2 database driver -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+
         <!-- Spring Batch dependencies -->
         <dependency>
             <groupId>org.springframework.batch</groupId>
