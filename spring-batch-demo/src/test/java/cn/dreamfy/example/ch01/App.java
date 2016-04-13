@@ -22,7 +22,7 @@ public class App {
 		Job job = (Job) context.getBean("billJob");
 		try {
 			JobExecution execution = jobLauncher.run(job, new JobParameters());
-			System.out.println("Exit Status : " + execution.toString());
+			System.out.println("Status : " + execution.toString());
 
 		} catch (Exception e) {
 			e.printStackTrace();

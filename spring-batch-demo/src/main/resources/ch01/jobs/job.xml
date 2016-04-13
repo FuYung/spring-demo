@@ -46,7 +46,7 @@
     <bean id="creditBillProcessor" scope="step" class="cn.dreamfy.example.ch01.CreditBillProcessor"/>
 
     <bean id="cvsItemWriter" class="org.springframework.batch.item.file.FlatFileItemWriter">
-        <property name="resource" value="file:spring-batch-demo/target/ch01/output/outputFile.csv"/>
+        <property name="resource" value="file:target/ch01/output/outputFile.csv"/>
         <property name="lineAggregator" ref="lineAggregator"/>
     </bean>
 
