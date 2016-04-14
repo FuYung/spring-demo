@@ -17,6 +17,7 @@
           class="org.springframework.batch.support.transaction.ResourcelessTransactionManager" />
 
     <!-- create job-meta tables automatically -->
+    <!-- MySql -->
     <!--<jdbc:initialize-database data-source="dataSource">-->
         <!--<jdbc:script location="org/springframework/batch/core/schema-drop-mysql.sql" />-->
         <!--<jdbc:script location="org/springframework/batch/core/schema-mysql.sql" />-->
