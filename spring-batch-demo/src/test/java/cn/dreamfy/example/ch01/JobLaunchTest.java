@@ -29,7 +29,10 @@ public class JobLaunchTest {
 
 	@Test
 	public void importProducts() throws JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException {
-		JobExecution jobExecution = jobLauncher.run(job, new JobParametersBuilder().addString("date", "2016-01-03").toJobParameters());
+		JobExecution jobExecution = jobLauncher.run(job, new JobParametersBuilder()
+				.addString("inputResource", "classpath:ch01/data/credit-card-bill-201604.csv")
+				.addString("date", "2016-01-03")
+				.toJobParameters());
 		System.out.println("status : " + jobExecution.toString());
 	}
 }
